@@ -15,7 +15,7 @@ if anim then
   print("removed AntiCheatTrigger")
 end
 local RunService = game:GetService("RunService")
-local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/Source.lua"))()
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
 
 WindUI:AddTheme({
     Name = "PoppyDarkPink",
