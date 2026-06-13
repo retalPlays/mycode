@@ -1,3 +1,6 @@
+if not game:IsLoaded() then
+    game.Loaded:Wait()
+end
 local function Notify()
   WindUI:Notify({
     Title = "announcement ",
@@ -769,4 +772,24 @@ do
         StopESP()
     end
 end
+  local CommunityTab = Window:Tab({
+    Title = "Community",
+    Icon = "Users",
+    IconColor = Color3.fromHex("#e803fc")
+})
+
+CommunityTab:Paragraph({
+    Title = "Our discord server",
+    Desc = "Join for updates",
+    Icon = "Users",
+    Buttons = {
+        {
+            Title = "invite link",
+            Icon = "Users",
+            Callback = function()
+                setclipboard("https://discord.gg/6KrhxYbm8Y")
+            end
+        }
+    }
+})
   Notify()
